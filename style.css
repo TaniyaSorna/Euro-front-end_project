@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.nav-link:hover{
+    color: tomato!important;
+
+}
+#banner{
+    background-image: url(images/banner.jpg);
+    padding: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.food-item{
+    text-decoration: none;
+    border-style: solid;
+    background: white;
+    border-color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding: 15px 50px;
+}
+.food-item:hover{
+    background-color: tomato!important;
+    border: none;
+}
+.card{
+    background-color: black;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.card-body{
+    padding: 1rem;
+}
+.card-img-top{
+    overflow: hidden; /* Hide overflow of the image */
+    border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+}
+.card img{
+    display: block; /* Remove inline spacing below the image */
+    width: 100%; /* Make image take full width */
+    height: 12rem; /* Fixed height for the image */
+    object-fit: cover; /* Ensure image covers the container */
+}
+.card-action{
+    display: flex;
+    justify-content: end;
+}
+.card:hover{
+    transform: scale(1.05); /* Scale up slightly on hover */
+    background-color: #f3f4f6; /* Light gray background on hover */
+    border-color: #d1d5db; /* Light gray border on hover */
+}
+/* Feedback */
+#feedback{
+    background-color: #f9f9f9!important;
+}
+/* Gallery */
+.gallery-item {
+    position: relative;
+    overflow: hidden;   
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+}
+.gallery-item:hover{
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+.gallery-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* footer  */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+/* about  */
+.restaurant-img {
+    border-radius: 0.75rem;
+}
+.staff-img {
+    border-radius: 9999px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+/* Contuct */
+.contact-form{
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.contact-form button{
+    padding: 0.75rem 1.5rem;
+    background: skyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background-color: blue;
+}
+
+/* Popup  */
+.popup{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-contant{
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-sizing: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.popup-contant button{
+    margin-top: 1rem;
+}
+
+/* FAQ section styles */
+.faq-answer {
+    display: none;
+}
+.faq-item.active .faq-answer {
+    display: block;
+}
+.icon {
+    transition: transform 0.3s;
+}
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
